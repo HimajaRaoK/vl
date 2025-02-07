@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            padding: 15px 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar img {
+            height: 40px;
+        }
+        .search-bar {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?food') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .restaurant-list {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .restaurant {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .restaurant img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy Logo">
+        <input type="text" class="search-bar" placeholder="Search for restaurants, food...">
+    </div>
+
+    <div class="hero">
+        <h1>Order Food Online in Your City</h1>
+        <p>Delicious food from top restaurants delivered to your doorstep.</p>
+    </div>
+
+    <div class="restaurant-list">
+        <div class="restaurant">
+            <img src="https://source.unsplash.com/250x200/?pizza" alt="Pizza">
+            <h3>Pizza Paradise</h3>
+            <p>⭐ 4.5 | Italian, Fast Food</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://source.unsplash.com/250x200/?burger" alt="Burger">
+            <h3>Burger Hub</h3>
+            <p>⭐ 4.2 | American, Fast Food</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://source.unsplash.com/250x200/?biryani" alt="Biryani">
+            <h3>Biryani Express</h3>
+            <p>⭐ 4.8 | Indian, Mughlai</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Swiggy Clone. For learning purposes only.</p>
+    </div>
+
+</body>
+</html>

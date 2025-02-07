@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 40px;
+            text-shadow: 3px 3px 5px pink;
+            background: rgba(255, 182, 193, 0.7);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Heart styling */
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            transform: rotate(-45deg);
+            animation: float 5s infinite ease-in-out;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(-45deg); opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-200px) rotate(-45deg); opacity: 0; }
+        }
+
+        /* Random heart positions */
+        .heart:nth-child(1) { left: 10%; animation-duration: 5s; }
+        .heart:nth-child(2) { left: 30%; animation-duration: 6s; }
+        .heart:nth-child(3) { left: 50%; animation-duration: 4s; }
+        .heart:nth-child(4) { left: 70%; animation-duration: 7s; }
+        .heart:nth-child(5) { left: 90%; animation-duration: 5.5s; }
+    </style>
+</head>
+<body>
+
+    <h1>Hey Prince, 💖 Will You Be My Valentine? 💕</h1>
+
+    <!-- Floating hearts -->
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+
+</body>
+</html>
